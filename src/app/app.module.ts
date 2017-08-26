@@ -13,11 +13,11 @@ import { JokesComponent } from './jokes/jokes.component'; */
  * router 
  */
 import { appRoutes } from './app.routes';
-import { UserInfoComponent } from './user-info/user-info.component'
+
 @NgModule({
   declarations: [
     AppComponent,
-    UserInfoComponent,
+ 
    /*  HomeComponent,
     JokesComponent */
   ],
