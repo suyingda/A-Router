@@ -10,7 +10,6 @@ export const appRoutes = [
     }, */
     {
         path: 'home',
-        listChilren:'',
         component: HomeComponent
     },
     {
