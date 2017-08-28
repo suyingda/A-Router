@@ -1,23 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { MySharedModule } from '../shared/shared.module'
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { JokesComponent } from './jokes/jokes.component';
+import {JokesComponent} from './jokes.component';
+import { JokesRoutes } from './jokes.routes'
 
-import {appRoutes} from './app.routes'
+ 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-      JokesComponent
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [],  
-  bootstrap: [AppComponent]
+    declarations: [
+        JokesComponent,
+    ],
+    imports: [
+        MySharedModule,
+        RouterModule.forChild(JokesRoutes)
+    ],
+    providers: [],
+    bootstrap: []
 })
-export class AppModule { }
+export class JokesModule { }
