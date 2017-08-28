@@ -20,6 +20,9 @@
                 <li routerLinkActive="active" class="dropdown">
                   <a routerLink="jokes">段子</a>
                 </li>
+                <li routerLinkActive="active" class="dropdown">
+                    <a [routerLink]="['home',{'name':'苏格兰','age':100,'xb':'男'}]">home.params</a>
+                  </li>
             </ul>
         </div>
     </div>
@@ -27,6 +30,7 @@
   <!-- 主体内容区域 -->
   <div class="container main-container">
     <router-outlet></router-outlet>
+   
   </div>
   <!-- 底部区域 -->
   <div class="footer bs-footer">
